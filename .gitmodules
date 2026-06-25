@@ -1,0 +1,8 @@
+[submodule "3rd_code/placo"]
+	path = 3rd_code/placo
+	url = https://github.com/Rhoban/placo.git
+	branch = inexus
+[submodule "3rd_code/pinocchio"]
+	path = 3rd_code/pinocchio
+	url = https://github.com/stack-of-tasks/pinocchio.git
+	branch = inexus

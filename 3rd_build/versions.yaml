@@ -1,0 +1,81 @@
+# Version pins derived from placo v0.9.23 pyproject.toml
+
+build_order:
+  - eigen
+  - boost
+  - tinyxml2
+  - jsoncpp
+  - console_bridge
+  - urdfdom_headers
+  - urdfdom
+  - coal
+  - eiquadprog
+  - pinocchio
+  - placo
+
+dependencies:
+  eigen:
+    url: https://gitlab.com/libeigen/eigen.git
+    tag: "3.4.0"
+    source_dir: sources/eigen
+    kind: cmake
+
+  boost:
+    kind: system_boost
+    components: filesystem,system,serialization
+
+  tinyxml2:
+    url: https://github.com/leethomason/tinyxml2.git
+    tag: "10.0.0"
+    source_dir: sources/tinyxml2
+    kind: cmake
+
+  jsoncpp:
+    url: https://github.com/open-source-parsers/jsoncpp.git
+    tag: "1.9.4"
+    source_dir: sources/jsoncpp
+    kind: cmake
+
+  console_bridge:
+    url: https://github.com/ros/console_bridge.git
+    tag: "1.0.2"
+    source_dir: sources/console_bridge
+    kind: cmake
+
+  urdfdom_headers:
+    url: https://github.com/ros/urdfdom_headers.git
+    tag: "2.0.0"
+    source_dir: sources/urdfdom_headers
+    kind: cmake
+
+  urdfdom:
+    url: https://github.com/ros/urdfdom.git
+    tag: "4.0.1"
+    source_dir: sources/urdfdom
+    kind: cmake
+
+  coal:
+    url: https://github.com/coal-library/coal.git
+    tag: "v3.0.2"
+    source_dir: sources/coal
+    kind: cmake
+
+  eiquadprog:
+    url: https://github.com/stack-of-tasks/eiquadprog.git
+    tag: "v1.2.9"
+    source_dir: sources/eiquadprog
+    kind: cmake
+
+  pinocchio:
+    url: https://github.com/stack-of-tasks/pinocchio.git
+    tag: "v3.8.0"
+    branch: inexus
+    source_dir: ../3rd_code/pinocchio
+    kind: submodule
+
+  placo:
+    url: https://github.com/Rhoban/placo.git
+    tag: "v0.9.23"
+    branch: inexus
+    source_dir: ../3rd_code/placo
+    kind: submodule
