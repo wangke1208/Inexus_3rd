@@ -39,6 +39,13 @@ git -C 3rd_code/pinocchio checkout inexus
 
 ## 构建
 
+脚本按 **`uname -m` 自动选择架构**，产物分别落在 `install/aarch64/` 或 `install/x86_64/`。也可显式指定：`./3rd_build/build.sh all --target x86_64`。
+
+| 架构 | 环境 | 详细说明 |
+|------|------|----------|
+| aarch64 | Linux ARM64 本机 / 容器 | 下文命令 |
+| x86_64 | Linux x86_64 本机 | **[3rd_build/BUILD_x86_64.md](3rd_build/BUILD_x86_64.md)**（版本表、apt 依赖、验证步骤） |
+
 在 aarch64 本机（当前容器）：
 
 ```bash
@@ -46,6 +53,12 @@ git -C 3rd_code/pinocchio checkout inexus
 ./3rd_build/build.sh all -j 2         # 内存较小时降低并行度
 ./3rd_build/build.sh fetch            # 仅拉源码
 ./3rd_build/build.sh build --clean    # 清 sources/、build/ 后重编（保留 install/）
+```
+
+x86_64 示例：
+
+```bash
+./3rd_build/build.sh all --target x86_64
 ```
 
 产物布局示例（每个库独立 `lib/` + `include/`）：
