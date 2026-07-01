@@ -1,6 +1,7 @@
 # Version pins derived from placo v0.9.23 pyproject.toml
 
 build_order:
+  - yaml-cpp
   - eigen
   - boost
   - tinyxml2
@@ -14,6 +15,12 @@ build_order:
   - placo
 
 dependencies:
+  yaml-cpp:
+    url: https://github.com/jbeder/yaml-cpp.git
+    tag: "0.8.0"
+    source_dir: sources/yaml-cpp
+    kind: cmake
+
   eigen:
     url: https://gitlab.com/libeigen/eigen.git
     tag: "3.4.0"

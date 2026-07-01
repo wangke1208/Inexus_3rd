@@ -52,6 +52,7 @@ git -C 3rd_code/pinocchio checkout inexus
 
 ```
 3rd_build/install/aarch64/
+├── yaml-cpp/lib/libyaml-cpp.a  yaml-cpp/include/
 ├── eigen/include/eigen3/
 ├── boost/lib/  boost/include/
 ├── pinocchio/lib/libpinocchio_*.a  pinocchio/include/
@@ -72,11 +73,36 @@ git -C 3rd_code/pinocchio checkout inexus
 cp -a 3rd_build/install/aarch64/ /path/to/3rd/aarch64/
 ```
 
+### 同步 yaml-cpp 到 controller_component
+
+**必须在目标架构环境构建**（Linux aarch64 容器内），不要用 macOS 本地产物覆盖 `3rdparty/yaml-cpp`。
+
+```bash
+cd controller_source/3rd_build
+
+# 仅构建 yaml-cpp（无其他依赖，最快）
+./build.sh fetch
+./build.sh build --only yaml-cpp
+
+# 拷贝预编译产物到组件目录
+./stage_yaml_cpp_to_component.sh
+
+# 验证
+bash ../../inexus/components/controller_component/.local/test/build_smoke.sh
+
+# 宿主机调用 wk_dev（推荐）
+bash ../../inexus/components/controller_component/.local/test/run_smoke_wk_dev.sh
+```
+
+`stage_yaml_cpp_to_component.sh` 将 `install/<arch>/yaml-cpp/` 同步到
+`inexus/components/controller_component/3rdparty/yaml-cpp/`（仅 `lib/` + `include/`）。
+
 ## 下游 CMake 集成
 
 ```cmake
 set(THIRD_ROOT /path/to/3rd/aarch64)
 list(APPEND CMAKE_PREFIX_PATH
+    ${THIRD_ROOT}/yaml-cpp
     ${THIRD_ROOT}/eigen
     ${THIRD_ROOT}/boost
     ${THIRD_ROOT}/tinyxml2

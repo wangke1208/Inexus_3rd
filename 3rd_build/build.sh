@@ -31,6 +31,7 @@ Options:
   -j <N>              Parallel jobs (default: nproc)
   --clean             Remove build/ and sources/ (not install/)
   --clean-install     Also remove install/<arch>/
+  --only <name>       Build only one library (e.g. yaml-cpp)
   -h, --help          Show this help
 EOF
 }
@@ -39,6 +40,7 @@ ACTION="all"
 ARCH="$(detect_arch)"
 CLEAN=0
 CLEAN_INSTALL=0
+ONLY=""
 PREFIX_PATH=""
 
 while [ $# -gt 0 ]; do
@@ -47,8 +49,9 @@ while [ $# -gt 0 ]; do
         --target) ARCH="$2"; shift 2 ;;
         -j) JOBS="$2"; shift 2 ;;
         --clean) CLEAN=1; shift ;;
-        --clean-install) CLEAN=1; CLEAN_INSTALL=1; shift ;;
-        -h|--help) usage; exit 0 ;;
+  --clean-install) CLEAN=1; CLEAN_INSTALL=1; shift ;;
+  --only) ONLY="$2"; shift 2 ;;
+  -h|--help) usage; exit 0 ;;
         *) echo "Unknown: $1"; usage; exit 1 ;;
     esac
 done
@@ -70,7 +73,7 @@ append_prefix() {
 rebuild_prefix_path() {
     PREFIX_PATH=""
     local name
-    for name in eigen boost tinyxml2 jsoncpp console_bridge urdfdom_headers urdfdom coal eiquadprog pinocchio placo; do
+    for name in yaml-cpp eigen boost tinyxml2 jsoncpp console_bridge urdfdom_headers urdfdom coal eiquadprog pinocchio placo; do
         append_prefix "$name"
     done
 }
@@ -300,6 +303,23 @@ already_built() {
     [ -f "$(lib_prefix "$name")/$marker" ]
 }
 
+build_yaml_cpp() {
+    already_built yaml-cpp lib/libyaml-cpp.a && return 0
+    local src dest bdir
+    src="$(resolve_src sources/yaml-cpp)"
+    dest="$(lib_prefix yaml-cpp)"
+    bdir="$BUILD_DIR/$ARCH/yaml-cpp"
+    echo "  [yaml-cpp] building ..."
+    cmake -S "$src" -B "$bdir" $(cmake_common "$dest") \
+        -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+        -DYAML_CPP_BUILD_TESTS=OFF \
+        -DYAML_CPP_BUILD_TOOLS=OFF \
+        -DYAML_BUILD_SHARED_LIBS=OFF
+    cmake --build "$bdir" -j"$JOBS"
+    cmake --install "$bdir"
+    append_prefix yaml-cpp
+}
+
 build_eigen() {
     already_built eigen include/eigen3/Eigen/Core && return 0
     local src dest bdir
@@ -472,6 +492,7 @@ build_one() {
     local name="$1" kind="$2"
     rebuild_prefix_path
     case "$name" in
+        yaml-cpp) build_yaml_cpp ;;
         eigen) build_eigen ;;
         boost) stage_boost; append_prefix boost ;;
         tinyxml2) build_tinyxml2 ;;
@@ -492,6 +513,9 @@ do_build() {
     echo "=== Building for $ARCH -> $INSTALL_ARCH ==="
     while IFS='|' read -r name kind url tag branch rel; do
         [ -z "$name" ] && continue
+        if [ -n "$ONLY" ] && [ "$name" != "$ONLY" ]; then
+            continue
+        fi
         echo "--- $name ---"
         build_one "$name" "$kind"
     done < <(yaml_python list "$VERSIONS")
