@@ -1,0 +1,8 @@
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/lib/libconsole_bridge.a
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/include/console_bridge/console.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/include/console_bridge/console_bridge_export.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/lib/console_bridge/cmake/console_bridge-targets.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/lib/console_bridge/cmake/console_bridge-targets-release.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/lib/console_bridge/cmake/console_bridge-config.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/lib/console_bridge/cmake/console_bridge-config-version.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/console_bridge/lib/pkgconfig/console_bridge.pc

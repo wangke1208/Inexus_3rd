@@ -1,0 +1,16 @@
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/urdfdom/cmake/urdfdom-config.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/urdfdom/cmake/urdfdom-configVersion.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/share/urdfdom/package.xml
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/pkgconfig/urdfdom.pc
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/bin/check_urdf
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/bin/urdf_to_graphiz
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/bin/urdf_to_graphviz
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/bin/urdf_mem_test
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/liburdfdom_model.a
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/liburdfdom_world.a
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/liburdfdom_sensor.a
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/liburdfdom_model_state.a
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/urdfdom/cmake/urdfdomExport.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/lib/urdfdom/cmake/urdfdomExport-release.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/include/urdfdom/urdf_parser/urdf_parser.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom/include/urdfdom/urdf_parser/exportdecl.h

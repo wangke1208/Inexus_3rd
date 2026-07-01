@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/sy_workspace/INEXUS/controller_source/3rd_build/sources/eigen/test/geo_alignedbox.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "geo_alignedbox_11"
+	}
+}

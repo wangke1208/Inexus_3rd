@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/liburdfdom_sensor.a CMakeFiles/urdfdom_sensor.dir/src/urdf_sensor.cpp.o
+/usr/bin/ranlib ../lib/liburdfdom_sensor.a

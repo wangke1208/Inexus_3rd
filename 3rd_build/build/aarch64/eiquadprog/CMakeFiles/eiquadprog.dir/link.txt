@@ -1,0 +1,2 @@
+/usr/bin/ar qc libeiquadprog.a "CMakeFiles/eiquadprog.dir/src/eiquadprog-fast.cpp.o" CMakeFiles/eiquadprog.dir/src/eiquadprog.cpp.o
+/usr/bin/ranlib libeiquadprog.a

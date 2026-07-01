@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/sy_workspace/INEXUS/controller_source/3rd_build/sources/eigen/test/lscg.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "lscg_2"
+	}
+}

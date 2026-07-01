@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/sy_workspace/INEXUS/controller_source/3rd_build/sources/eigen/unsupported/test/kronecker_product.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildUnsupported"
+		],
+		"name" : "kronecker_product_2"
+	}
+}

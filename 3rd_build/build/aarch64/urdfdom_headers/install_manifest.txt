@@ -1,0 +1,17 @@
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_exception/exception.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_sensor/sensor.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_sensor/types.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_world/types.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_world/world.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/twist.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/utils.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/types.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/joint.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/color.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/pose.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/model.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/include/urdfdom_headers/urdf_model/link.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/lib/urdfdom_headers/cmake/urdfdom_headers-config.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/lib/urdfdom_headers/cmake/urdfdom_headers-config-version.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/lib/pkgconfig/urdfdom_headers.pc
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/urdfdom_headers/lib/urdfdom_headers/cmake/urdfdom_headersExport.cmake

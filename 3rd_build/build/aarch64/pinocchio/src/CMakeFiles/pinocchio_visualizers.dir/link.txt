@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpinocchio_visualizers.a "CMakeFiles/pinocchio_visualizers.dir/visualizers/base-visualizer.cpp.o"
+/usr/bin/ranlib libpinocchio_visualizers.a

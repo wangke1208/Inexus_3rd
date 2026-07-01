@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libconsole_bridge.a CMakeFiles/console_bridge.dir/src/console.cpp.o
+/usr/bin/ranlib lib/libconsole_bridge.a

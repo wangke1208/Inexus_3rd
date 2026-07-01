@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/liburdfdom_model.a CMakeFiles/urdfdom_model.dir/src/pose.cpp.o CMakeFiles/urdfdom_model.dir/src/model.cpp.o CMakeFiles/urdfdom_model.dir/src/link.cpp.o CMakeFiles/urdfdom_model.dir/src/joint.cpp.o
+/usr/bin/ranlib ../lib/liburdfdom_model.a

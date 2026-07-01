@@ -1,0 +1,11 @@
+prefix=/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/yaml-cpp
+exec_prefix=${prefix}
+includedir=/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/yaml-cpp/include
+libdir=/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/yaml-cpp/lib
+
+Name: Yaml-cpp
+Description: A YAML parser and emitter for C++
+Version: 0.8.0
+Requires:
+Libs: -L${libdir} -lyaml-cpp
+Cflags: -I${includedir}

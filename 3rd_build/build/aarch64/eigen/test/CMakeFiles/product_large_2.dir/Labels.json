@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/sy_workspace/INEXUS/controller_source/3rd_build/sources/eigen/test/product_large.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "product_large_2"
+	}
+}

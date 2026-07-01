@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpinocchio_collision.a CMakeFiles/pinocchio_collision.dir/collision/collision.cpp.o CMakeFiles/pinocchio_collision.dir/collision/distance.cpp.o
+/usr/bin/ranlib libpinocchio_collision.a

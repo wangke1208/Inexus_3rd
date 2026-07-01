@@ -1,0 +1,15 @@
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/lib/pkgconfig/jsoncpp.pc
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/lib/cmake/jsoncpp/jsoncppConfig.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/lib/cmake/jsoncpp/jsoncppConfig-release.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/lib/cmake/jsoncpp/jsoncppConfigVersion.cmake
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/lib/libjsoncpp.a
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/allocator.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/assertions.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/config.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/forwards.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/json.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/json_features.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/reader.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/value.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/version.h
+/sy_workspace/INEXUS/controller_source/3rd_build/install/aarch64/jsoncpp/include/json/writer.h
